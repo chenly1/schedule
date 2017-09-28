@@ -17,16 +17,9 @@ export default new Router({
       hidden: true
     },
     {
-      path: '/',
-      component: Home,
-      name: '管理系统',
-      iconCls: 'fa fa-th-large',
-      leaf: true, // 只有一个节点
-      redirect: '/cale',
-      children: [
-        { path: '/hello', component: Hello, name: '主页' },
-        { path: '/cale', component: cale, name: 'fullcale' }
-      ]
+      path: '/cale',
+      component: cale,
+      name: '管理系统'
     },
     {
       path: '*',
